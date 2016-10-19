@@ -8,6 +8,7 @@ const ejs = require('ejs');
 const app = express();
 
 //set views directory
+app.use(express.static('css'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 

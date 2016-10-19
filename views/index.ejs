@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <title>My First Express App</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel ="stylesheet" type="text/css" href = "/style.css">
   </head>
   <body>
-    <img src= <%=avatar %> />
-    <h1><%= description %></h1>
-    <h3>My skills are:</h3>
-    <ul>
-      <% skills.forEach(function(skill) {%>
-        <li><%=skill%></li>
-        <% }) %>
-    </ul>
-    <h3>My hobbies are:</h3>
-    <ul>
-      <% hobbies.forEach(function(hobby) {%>
-        <li><%=hobby%></li>
-        <% }) %>
-    </ul>
+    <div class = "intro">
+      <img src= <%=avatar %> />
+      <h1><%= description %></h1>
+    </div>
+      <div class= "pointsOne">
+        <h3>My skills are:</h3>
+          <ul>
+            <% skills.forEach(function(skill) {%>
+              <li><%=skill%></li>
+              <% }) %>
+          </ul>
+      </div>
+      <div class= "pointsTwo">
+        <h3>My hobbies are:</h3>
+          <ul>
+            <% hobbies.forEach(function(hobby) {%>
+              <li><%=hobby%></li>
+              <% }) %>
+          </ul>
+      </div>
   </body>
   </html>
